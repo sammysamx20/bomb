@@ -26,14 +26,16 @@ const [yes, setYes] = useState(false)
 
   return (
     <div className="App">
+      <div>
+      <h1 style={{top: 0,backgroundColor: "#61dafb", padding: "15px 32px"}}>The Bomb(dot)com ;)</h1>
       {yes &&
       <div>
        <img src={bomb} className="App-logo" alt="logo" />
-    <Fireworks {...fxProps1} />  
-    <div>SHE ALWAYS IS</div> </div>  }
-    <button style={{backgroundColor: "#008CBA", padding: "15px 32px"}} onClick={() => setYes(!yes)}>She bomb?</button>
-
+    <Fireworks {...fxProps1} />   </div>  }
+    <button style={{backgroundColor: "#008CBA", padding: "15px 32px", cursor: "pointer" }} onClick={() => setYes(!yes)}>{yes? "SHE ALWAYS IS!" : "She bomb?"}</button>
+    </div>
       <header className="App-header">
+        <br/>
         <img src={pic1} className="App-logo" alt="logo" />
         <img src={pic2} className="App-logo" alt="logo" />
         <img src={pic3} className="App-logo" alt="logo" />
